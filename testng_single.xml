@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Single Functionality Suite">
+
+    <!-- Listener for generating ExtentReports and capturing screenshots -->
+    <listeners>
+        <listener class-name="utils.ReportListener" />
+    </listeners>
+
+    <test name="Single Page Test">
+        <!-- Change browser to 'chrome' or 'firefox' -->
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <!-- Change this class to the page you want to run:
+                 tests.GUIElementsTests
+                 tests.WebTablesTests
+                 tests.AlertsTests
+                 tests.MouseHoverTests
+                 tests.DoubleClickTests
+                 tests.DragDropTests
+                 tests.NewTabTests
+                 tests.FileUploadTests
+                 tests.LinksLabelsTests
+            -->
+            <class name="tests.GUIElementsTests" />
+        </classes>
+    </test>
+
+</suite>
+

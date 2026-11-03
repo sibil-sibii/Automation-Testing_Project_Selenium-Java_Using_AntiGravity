@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestAutomationPractice Test Suite" parallel="none">
+
+    <!-- Listener for generating ExtentReports and capturing screenshots -->
+    <listeners>
+        <listener class-name="utils.ReportListener" />
+    </listeners>
+
+    <!-- Chrome Browser Test Run -->
+    <test name="Chrome Tests">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="tests.GUIElementsTests" />
+            <class name="tests.WebTablesTests" />
+            <class name="tests.AlertsTests" />
+            <class name="tests.MouseHoverTests" />
+            <class name="tests.DoubleClickTests" />
+            <class name="tests.DragDropTests" />
+            <class name="tests.NewTabTests" />
+            <class name="tests.FileUploadTests" />
+            <class name="tests.LinksLabelsTests" />
+        </classes>
+    </test>
+
+    <!-- Firefox Browser Test Run -->
+    <test name="Firefox Tests">
+        <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="tests.GUIElementsTests" />
+            <class name="tests.WebTablesTests" />
+            <class name="tests.AlertsTests" />
+            <class name="tests.MouseHoverTests" />
+            <class name="tests.DoubleClickTests" />
+            <class name="tests.DragDropTests" />
+            <class name="tests.NewTabTests" />
+            <class name="tests.FileUploadTests" />
+            <class name="tests.LinksLabelsTests" />
+        </classes>
+    </test>
+
+</suite>
+

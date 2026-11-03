@@ -1,0 +1,4 @@
+.\mvn test -Dtest=AlertsTests
+.\mvn test -Dtest=GUIElementsTests
+.\mvn test -Dtest=DragDropTests
+.\mvn test -Dtest=WebTablesTests
